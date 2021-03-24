@@ -33,12 +33,13 @@ There are only two files for the project:
 The project has four parts:
 1.	The first part is exploring the three data files provided by Starbucks: portfolio.json, profile.json, transcript.json.
 2.	The second part is to pre-process these three data files by separating multiple values into different columns, dropping the NaN values, and replacing some values with category values in order to do analysis.  Then merge the three cleaned data files into one data file and analyze the data.
-3.	The third part is to build a predict model then validate the model with different algorithms, I choose three algorithms to compare the results: random forest, K-Nearest neighbors, decision tree.
+3.	The third part is to build a predict model then validate the model with different algorithms, I choose two algorithms to compare the results: Logistic Regression, Random Forest.  To run the test with each model, I use RandomizedSearchCV with 10 iterations to optimize the training time, and create a parameters dictionary to tune the model.
 4.	The fourth part is to write a blog and publish it on medium. 
 
+Comparing both accuracy and f1score results, Random Forest performs better than Logistic Regression.  The accuracy difference between Random Forest and Logistic Regression is about 0.04(4%).  
 
 
 Licensing, Authors, Acknowledgements
 
-Thanks Udacity and Starbucks for providing the data sets. Thanks Vish Blze for his post which provides me ideas on where and how I should improve my work on this project.
+Thanks to Udacity and Starbucks for providing the data sets. Thanks to Vish Blze for his post which provides me ideas on where and how I should improve my work on this project.
 
